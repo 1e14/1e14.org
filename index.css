@@ -7,14 +7,14 @@ $color5: rgba(95, 75, 102, 1);
 */
 
 body {
-    width: 768px;
     margin: 0 auto;
+    padding: 0 1em;
     color: rgba(54, 53, 55, 1);
     font-size: 16px;
     font-family: "Raleway", sans-serif;
 }
 
-body * {
+* {
     box-sizing: border-box;
 }
 
@@ -50,13 +50,17 @@ a {
 blockquote {
     margin: 1em 0 0 0;
     padding: 0 0 0 18px;
-    border-left: 4px solid rgba(95, 75, 102, 1);
+    border-left: 0.2em solid rgba(95, 75, 102, 1);
     font-size: 18px;
     color: rgba(95, 75, 102, 1);
 }
 
 header, section, footer {
-    margin: 36px 0;
+    margin: 2em 0;
+}
+
+header {
+    position: relative;
 }
 
 header > * {
@@ -71,40 +75,95 @@ header > * {
 }
 
 .header__title {
-    margin-left: 24px;
+    margin-left: 0.5em;
     font-size: 72px;
 }
 
 .header__links {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .header__links img {
-    width: 24px;
+    width: 1.5em;
 }
 
 .header__npm img {
-    width: 32px;
+    width: 2em;
 }
 
 .header__links a {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 1em;
 }
 
-.projects::after {
-    content: "";
-    display: block;
-    clear: both;
+footer {
+    color: rgba(95, 75, 102, 1);
 }
 
-.projects > div {
-    float: left;
-    width: 50%;
-    padding-right: 10px;
+@media screen {
+    body {
+        -webkit-text-size-adjust: none;
+    }
 }
 
-.projects > div:last-child {
-    padding-right: 0;
+@media screen and (max-width: 666px) {
+    body {
+        width: 375px;
+    }
+}
+
+@media screen and (min-width: 667px) {
+    body {
+        width: 667px;
+    }
+
+    .projects > div {
+        float: left;
+        width: 50%;
+        padding-right: 10px;
+    }
+
+    .projects > div:last-child {
+        padding-right: 0;
+    }
+
+    .projects::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        width: 1024px;
+        font-size: 22px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    blockquote {
+        font-size: 24px;
+    }
+
+    .header__logo {
+        font-size: 96px;
+    }
+
+    .header__title {
+        font-size: 96px;
+    }
 }
