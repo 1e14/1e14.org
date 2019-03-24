@@ -1,0 +1,110 @@
+/*
+$color1: rgba(54, 169, 225, 1);
+$color2: rgba(231, 29, 115, 1);
+$color3: rgba(54, 53, 55, 1);
+$color4: rgba(44, 19, 32, 1);
+$color5: rgba(95, 75, 102, 1);
+*/
+
+body {
+    width: 768px;
+    margin: 0 auto;
+    color: rgba(54, 53, 55, 1);
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+    margin: 1em 0 0 0;
+    font-size: 32px;
+    color: rgba(44, 19, 32, 1);
+}
+
+h2 {
+    margin: 1em 0 0 0;
+    font-size: 24px;
+}
+
+h3 {
+    margin: 1em 0 0 0;
+    font-size: 18px;
+}
+
+p {
+    margin: 1em 0 0 0;
+}
+
+a {
+    color: rgba(231, 29, 115, 1);
+    text-decoration: underline;
+}
+
+blockquote {
+    margin: 1em 0 0 0;
+    padding: 0 0 0 18px;
+    border-left: 4px solid rgba(95, 75, 102, 1);
+    font-size: 18px;
+    color: rgba(95, 75, 102, 1);
+}
+
+header, section, footer {
+    margin: 36px 0;
+}
+
+header > * {
+    display: inline;
+    vertical-align: middle;
+}
+
+.header__logo {
+    font-size: 72px;
+    width: 1em;
+    height: 1em;
+}
+
+.header__title {
+    margin-left: 24px;
+    font-size: 72px;
+}
+
+.header__links {
+    float: right;
+}
+
+.header__links img {
+    width: 24px;
+}
+
+.header__npm img {
+    width: 32px;
+}
+
+.header__links a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.projects::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.projects > div {
+    float: left;
+    width: 50%;
+    padding-right: 10px;
+}
+
+.projects > div:last-child {
+    padding-right: 0;
+}
