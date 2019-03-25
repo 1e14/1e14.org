@@ -99,6 +99,14 @@ header > * {
     margin-left: 1em;
 }
 
+.intro__fgp-example {
+    text-align: center;
+}
+
+.intro__fgp-example > img {
+    width: 100%;
+}
+
 footer {
     color: rgba(95, 75, 102, 1);
 }
@@ -165,5 +173,9 @@ footer {
 
     .header__title {
         font-size: 96px;
+    }
+
+    .intro__fgp-example > img {
+        width: 80%;
     }
 }
