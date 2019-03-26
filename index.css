@@ -96,7 +96,7 @@ header > * {
 .header__links a {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 1em;
+    margin-left: 0.5em;
 }
 
 .intro__fgp-example {
@@ -120,6 +120,11 @@ footer {
 @media screen and (max-width: 666px) {
     body {
         width: 375px;
+    }
+
+    .header__links a {
+        display: block;
+        margin-bottom: 0.5em;
     }
 }
 
